@@ -62,7 +62,7 @@ const About = () => {
             <div className="profile-card">
               <div className="profile-image">
                 {/* Add your profile image here */}
-                <div className="image-placeholder">Your Photo</div>
+                <img src="./myPhoto.jpg" alt="youssef" />
               </div>
               <div className="profile-stats">
                 <div className="stat">

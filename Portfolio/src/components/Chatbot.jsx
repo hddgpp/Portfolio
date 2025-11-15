@@ -94,7 +94,7 @@ const Chatbot = ({ isOpen, onClose }) => {
               onClick={clearChat}
               title="Clear chat"
             >
-              Delete
+              <img src="./delete.png" alt="delete" />
             </button>
             <button 
               className="close-button" 
