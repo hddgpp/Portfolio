@@ -87,11 +87,11 @@
 }
 
 .skills-section h3::before {
-  content: '⚡';
+  content: '';
 }
 
 .learning-section h3::before {
-  content: '📚';
+  content: '';
 }
 
 .skills-grid {
