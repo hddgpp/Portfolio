@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { FaMoon } from "react-icons/fa";
+import { FaSun } from "react-icons/fa";
 import '../styles/Header.css'
 
 const Header = ({ darkMode, toggleDarkMode }) => {
@@ -19,7 +21,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
-    setIsMobileMenuOpen(false) // Close mobile menu after clicking a link
+    setIsMobileMenuOpen(false)
   }
 
   const toggleMobileMenu = () => {
@@ -47,10 +49,10 @@ const Header = ({ darkMode, toggleDarkMode }) => {
             onClick={toggleDarkMode}
             aria-label="Toggle dark mode"
           >
-            {darkMode ? '☀️' : '🌙'}
+            {darkMode ? <FaSun /> : <FaMoon />}
           </button>
 
-          {/* Hamburger Menu Button - Mobile Only */}
+          {/* Hamburger Menu Button */}
           <button 
             className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}
             onClick={toggleMobileMenu}
@@ -64,9 +66,10 @@ const Header = ({ darkMode, toggleDarkMode }) => {
       </nav>
 
       {/* Mobile Menu Overlay */}
-      <div className={`mobile-menu-overlay ${isMobileMenuOpen ? 'active' : ''}`} 
-           onClick={() => setIsMobileMenuOpen(false)}>
-      </div>
+      <div 
+        className={`mobile-menu-overlay ${isMobileMenuOpen ? 'active' : ''}`} 
+        onClick={() => setIsMobileMenuOpen(false)}
+      ></div>
 
       {/* Mobile Menu */}
       <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
@@ -77,23 +80,14 @@ const Header = ({ darkMode, toggleDarkMode }) => {
             onClick={() => setIsMobileMenuOpen(false)}
             aria-label="Close menu"
           >
-            
           </button>
         </div>
         
         <ul className="mobile-nav-links">
-          <li>
-            <button onClick={() => scrollToSection('home')}>Home</button>
-          </li>
-          <li>
-            <button onClick={() => scrollToSection('projects')}>Projects</button>
-          </li>
-          <li>
-            <button onClick={() => scrollToSection('about')}>About</button>
-          </li>
-          <li>
-            <button onClick={() => scrollToSection('contact')}>Contact</button>
-          </li>
+          <li><button onClick={() => scrollToSection('home')}>Home</button></li>
+          <li><button onClick={() => scrollToSection('projects')}>Projects</button></li>
+          <li><button onClick={() => scrollToSection('about')}>About</button></li>
+          <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
         </ul>
 
         <div className="mobile-menu-footer">
@@ -102,7 +96,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
             onClick={toggleDarkMode}
             aria-label="Toggle dark mode"
           >
-            {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+            {darkMode ? <><FaSun /> Light Mode</> : <><FaMoon /> Dark Mode</>}
           </button>
         </div>
       </div>
