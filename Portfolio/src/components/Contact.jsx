@@ -29,20 +29,20 @@ const Contact = () => {
               I'm always open to discussing new opportunities, creative projects, 
               or just having a chat about technology and development.
             </p>
-            
+            <div className="social-links">
             <div className="contact-details">
               <div className="contact-detail">
-                <span className="detail-icon"><PiMicrosoftOutlookLogo /></span>
+                
                 <div>
                   <h4>Email</h4>
-                  <a href="mailto:youssef.dev.ai@outlook.com" className="contact-link">
+                  <a href="mailto:youssef.dev.ai@outlook.com" className="social-link">
                     youssef.dev.ai@outlook.com
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="social-links">
+            
               <a href="https://github.com/hddgpp" target="_blank" rel="noopener noreferrer" className="social-link">
                 <span className="social-icon"><FaGithub /></span>
                 GitHub
