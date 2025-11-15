@@ -8,14 +8,17 @@ import '../styles/Contact.css'
 
 const Contact = () => {
   const handleResumeDownload = () => {
-    // Create a temporary anchor element for download
-    const link = document.createElement('a')
-    link.href = '/resume.pdf'
-    link.download = 'Youssef_Meftouhi_Frontend_Developer_Resume.pdf'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+  const link = document.createElement('a')
+  
+  // Use this for both local and production
+  const baseUrl = import.meta.env.BASE_URL
+  link.href = `${baseUrl}resume.pdf`
+  
+  link.download = 'Youssef_Meftouhi_Frontend_Developer_Resume.pdf'
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
 
   return (
     <section id="contact" className="contact">

@@ -32,7 +32,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <nav className="nav">
         <div className="nav-brand">
-          <span>Hddgpp</span>
+          <span className='nav-links'>Hddgpp</span>
         </div>
         
         {/* Desktop Navigation */}
