@@ -5,7 +5,7 @@ A modern Portfolio website built with React and modern CSS. Features **AI-Chatbo
 ![Portfolio Website](https://img.shields.io/badge/React-18.x-blue) ![AI-Powered](https://img.shields.io/badge/AI-Powered-green) ![License](https://img.shields.io/badge/License-MIT-green) ![Status](https://img.shields.io/badge/Status-Live-success)
 
 ## 🚀 Live Demo
-[View Live Site](https://blacktopcoffee.netlify.app)
+[View Live Site]( https://meftouhi-portfolio.netlify.app)
 
 ---
 
