@@ -22,7 +22,7 @@ const Chatbot = ({ isOpen, onClose }) => {
       setMessages([{
         id: 1,
         type: 'ai',
-        content: "Hi! I'm **Leo**, Youssef's portfolio assistant. I can tell you about his skills, projects, experience, and background. What would you like to know? 👋"
+        content: "Hi! I'm **Leo**, Youssef's portfolio assistant. I can tell you about his skills, projects, experience, and background. What would you like to know?"
       }])
     }
   }, [isOpen, messages.length])
@@ -94,7 +94,7 @@ const Chatbot = ({ isOpen, onClose }) => {
               onClick={clearChat}
               title="Clear chat"
             >
-              🗑️
+              Delete
             </button>
             <button 
               className="close-button" 
@@ -111,7 +111,7 @@ const Chatbot = ({ isOpen, onClose }) => {
             <div key={message.id} className={`message ${message.type}`}>
               <div className="message-content">
                 {message.type === 'ai' && (
-                  <div className="ai-avatar">🤖</div>
+                  <div className="ai-avatar"></div>
                 )}
                 <div className="message-text">
                   {message.content.split('\n').map((line, index) => (
@@ -129,7 +129,7 @@ const Chatbot = ({ isOpen, onClose }) => {
           {isLoading && (
             <div className="message ai loading">
               <div className="message-content">
-                <div className="ai-avatar">🤖</div>
+                <div className="ai-avatar"></div>
                 <div className="message-text">
                   <div className="typing-indicator">
                     <span></span>
@@ -157,7 +157,7 @@ const Chatbot = ({ isOpen, onClose }) => {
             disabled={isLoading || !input.trim()}
             className="send-button"
           >
-            {isLoading ? '⏳' : '📤'}
+            {isLoading ? '⏳' : 'Send'}
           </button>
         </form>
       </div>
