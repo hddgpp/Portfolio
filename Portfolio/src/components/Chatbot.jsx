@@ -74,7 +74,7 @@ const Chatbot = ({ isOpen, onClose }) => {
     setMessages([{
       id: 1,
       type: 'ai',
-      content: "Hi! I'm **Leo**, Youssef's portfolio assistant. I can tell you about his skills, projects, experience, and background. What would you like to know? 👋"
+      content: "Hi! I'm **Leo**, Youssef's portfolio assistant. I can tell you about his skills, projects, experience, and background. What would you like to know?"
     }])
   }
 
