@@ -7,6 +7,7 @@ import WhyHireMe from './components/WhyHireMe'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Chatbot from './components/Chatbot'
+import { TbMessageChatbot } from "react-icons/tb";
 import './styles/index.css'
 
 function App() {
@@ -50,7 +51,7 @@ function App() {
         onClick={toggleChatbot}
         aria-label="Open AI Chatbot"
       >
-        💬
+        <TbMessageChatbot />
       </button>
     </div>
   )

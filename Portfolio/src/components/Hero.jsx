@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/Hero.css'
 
 const Hero = () => {
-  const skills = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Vite', 'Git']
+  const skills = ['HTML5', 'CSS3', 'JavaScript', 'React', 'TypeScript', 'TailwindCSS', 'Next.JS']
 
   const scrollToProjects = () => {
     const element = document.getElementById('projects')
