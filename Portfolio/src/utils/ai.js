@@ -27,7 +27,7 @@ Started coding: July 2025
 Background: Self-taught developer
 Current program: ALX Pathway Program
 Current focus: Frontend development
-Goal: Landing a remote junior frontend role (EU/US startups preferred)
+Goal: Landing a remote junior frontend role
 
 📌 CONTACT & SOCIAL LINKS
 
@@ -63,7 +63,7 @@ Tools used:
 
 Youssef has built various projects including:
 - AI-powered apps (Recipe generator, Blacktop Coffee AI menu, Leo Chatbot)
-- React mini-projects (40+)
+- JavaScript mini-projects (40+)
 - Full UI/UX builds
 - Amazon-style features (delivery date logic)
 
@@ -117,7 +117,6 @@ export async function getAIResponse(userMessage, history = []) {
   }
 
   try {
-    // Format history → convert your submit[] into proper chat model format
     const formattedHistory = history.map(msg => ({
       role: msg.sender === 'user' ? 'user' : 'assistant',
       content: msg.message
