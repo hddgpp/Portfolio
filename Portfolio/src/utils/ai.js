@@ -28,6 +28,7 @@ Background: Self-taught developer
 Current program: ALX Pathway Program
 Current focus: Frontend development
 Goal: Landing a remote junior frontend role
+starting point: he start learning to code in june 2025
 
 📌 CONTACT & SOCIAL LINKS
 
