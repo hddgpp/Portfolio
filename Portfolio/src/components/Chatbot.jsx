@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { getAIResponse } from '../'
+import { getAIResponse } from '../utils/ai.js'
 import '../styles/Chatbot.css'
 
 const Chatbot = ({ isOpen, onClose }) => {
